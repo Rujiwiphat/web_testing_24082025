@@ -1,0 +1,79 @@
+{"level":30,"time":"2025-08-24T04:45:12.701Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Listening on 52311"}
+(node:28392) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-24T04:45:12.971Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-24T04:45:13.214Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-08-24T04:45:13.216Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-24T04:45:13.215Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-24T04:45:13.229Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-08-24T04:45:13.230Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":true,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":800,\"width\":1200}}"}
+{"level":30,"time":"2025-08-24T04:45:13.230Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-24T04:45:13.230Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Trace file: "}
+{"level":30,"time":"2025-08-24T04:45:13.250Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active context"}
+{"level":30,"time":"2025-08-24T04:45:13.251Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newContext"}
+{"level":30,"time":"2025-08-24T04:45:13.257Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-24T04:45:13.257Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-24T04:45:14.372Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-24T04:45:14.372Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active page"}
+{"level":30,"time":"2025-08-24T04:45:19.420Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-24T04:45:19.426Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:19.434Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:19.439Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-08-24T04:45:21.478Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method goTo"}
+{"level":30,"time":"2025-08-24T04:45:21.486Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:21.488Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Strict mode is enabled, find Locator with input[type=\"range\"] in page."}
+{"level":30,"time":"2025-08-24T04:45:21.528Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:21.537Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:21.537Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Strict mode is enabled, find Locator with input[type=\"range\"] in page."}
+{"level":30,"time":"2025-08-24T04:45:21.552Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:21.558Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:21.558Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action move with params {\"x\":519.303955078125,\"y\":541.8962707519531,\"options\":{\"steps\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:21.562Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:21.566Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:21.566Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:21.575Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:21.581Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:21.581Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action move with params {\"x\":114.3323974609375,\"y\":541.8962707519531,\"options\":{\"steps\":100}}"}
+{"level":30,"time":"2025-08-24T04:45:23.216Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:23.217Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:23.218Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:23.221Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:23.225Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T04:45:23.225Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","Take screenshot with options: ":{"path":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_day3\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-24T04:45:23.381Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T04:45:23.386Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:23.386Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Strict mode is enabled, find Locator with css=input[type=\"range\"] in page."}
+{"level":30,"time":"2025-08-24T04:45:23.394Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBoundingBox"}
+{"level":30,"time":"2025-08-24T04:45:23.398Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:23.398Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action move with params {\"x\":519.303955078125,\"y\":541.8962707519531,\"options\":{\"steps\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:23.403Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:23.405Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:23.405Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action down with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:23.408Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:23.410Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:23.411Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action move with params {\"x\":924.2755126953125,\"y\":541.8962707519531,\"options\":{\"steps\":100}}"}
+{"level":30,"time":"2025-08-24T04:45:24.770Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseMove"}
+{"level":30,"time":"2025-08-24T04:45:24.771Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:24.771Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Invoking mouse action up with params {\"options\":{\"button\":\"left\",\"clickCount\":1}}"}
+{"level":30,"time":"2025-08-24T04:45:24.773Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method mouseButton"}
+{"level":30,"time":"2025-08-24T04:45:24.777Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T04:45:24.777Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","Take screenshot with options: ":{"path":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_day3\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-24T04:45:24.899Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T04:45:24.904Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.906Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.911Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.913Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.915Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.917Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.919Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.921Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.924Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.926Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T04:45:24.928Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active context"}
+{"level":30,"time":"2025-08-24T04:45:24.928Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Changing current active page: page=5984d630-94f8-4d68-9cc7-b63f9a5f65b2"}
+{"level":30,"time":"2025-08-24T04:45:24.928Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active page"}
+{"level":30,"time":"2025-08-24T04:45:24.931Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-24T04:45:24.982Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Removed page=8e8d16af-c8d9-498d-8913-73726798283f from context=978d3763-e295-4b48-b522-fd8b5e1f0bd5 page stack"}
+{"level":30,"time":"2025-08-24T04:45:25.043Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-24T04:45:25.129Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-24T04:45:25.381Z","pid":28392,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method closeAllBrowsers"}

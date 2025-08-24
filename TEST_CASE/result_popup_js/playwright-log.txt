@@ -1,0 +1,63 @@
+{"level":30,"time":"2025-08-24T06:25:37.734Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Listening on 58764"}
+(node:30852) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-24T06:25:38.063Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-24T06:25:38.273Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-08-24T06:25:38.275Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-24T06:25:38.274Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-24T06:25:38.285Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-08-24T06:25:38.285Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2025-08-24T06:25:38.286Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-24T06:25:38.286Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Trace file: "}
+{"level":30,"time":"2025-08-24T06:25:38.311Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active context"}
+{"level":30,"time":"2025-08-24T06:25:38.311Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newContext"}
+{"level":30,"time":"2025-08-24T06:25:38.317Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-24T06:25:38.318Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-08-24T06:25:39.423Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-24T06:25:39.423Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Changed active page"}
+{"level":30,"time":"2025-08-24T06:25:43.682Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-24T06:25:43.687Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method handleAlert"}
+{"level":30,"time":"2025-08-24T06:25:43.688Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method handleAlert"}
+{"level":30,"time":"2025-08-24T06:25:43.692Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-24T06:25:43.692Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Strict mode is enabled, find Locator with xpath=//button[text()='Click for JS Alert'] in page."}
+{"level":30,"time":"2025-08-24T06:25:43.740Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Alert text: I am a JS Alert"}
+{"level":30,"time":"2025-08-24T06:25:44.750Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method click"}
+{"level":30,"time":"2025-08-24T06:25:44.755Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T06:25:44.755Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Strict mode is disabled, return Locator: //button[text()='Click for JS Alert'] in page."}
+{"level":30,"time":"2025-08-24T06:25:44.756Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","Take screenshot with options: ":{"path":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_popup_js\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false,"mask":[{"_frame":{"_type":"Frame","_guid":"frame@126566557f0c93ac9d7703aa3719c19d"},"_selector":"//button[text()='Click for JS Alert']"}]}}
+{"level":30,"time":"2025-08-24T06:25:44.850Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-24T06:25:44.853Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-24T06:25:44.875Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Removed page=3689e104-678f-43d3-a959-55bc2f1623ab from context=8514d788-5351-4a89-99fd-db7fa6641e49 page stack"}
+{"level":30,"time":"2025-08-24T06:25:45.109Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-24T06:25:45.142Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T06:25:45.143Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:12223:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:13119:59)
+    at PlaywrightServer.setTimeout (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js:13367:57)
+    at Object.onReceiveHalfClose (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-24T06:25:45.171Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T06:25:45.171Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-24T06:25:45.218Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-24T06:25:45.218Z","pid":30852,"hostname":"LAPTOP-OVGNBA2R","msg":"End of node method closeAllBrowsers"}

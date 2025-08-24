@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.10 on win32)" generated="2025-08-24T11:45:11.644688" rpa="false" schemaversion="5">
+<suite id="s1" name="Day3" source="D:\RobotFrameWrok_Entronica\TEST_CASE\day3.robot">
+<kw name="Open web browser" owner="demo_qa_keyword" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-24T11:45:11.888899" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_day3\\browser\\traces\\temp\\e4f0d1e2-c3a4-471e-8aa2-b33f76470bdc"}</msg>
+<msg time="2025-08-24T11:45:11.915752" level="INFO">Starting Browser process C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js using port 52311</msg>
+<msg time="2025-08-24T11:45:11.915752" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\Browser\\wrapper\\index.js', '52311']</msg>
+<msg time="2025-08-24T11:45:13.224018" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_day3\\browser\\traces\\temp\\e4f0d1e2-c3a4-471e-8aa2-b33f76470bdc"}</msg>
+<arg>${browser}</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-24T11:45:11.888899" elapsed="1.335119"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-24T11:45:13.229959" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": true,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 800,
+    "width": 1200
+  }
+}</msg>
+<msg time="2025-08-24T11:45:13.255198" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-24T11:45:13.255198" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': True, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 800, 'width': 1200}}</msg>
+<arg>viewport={"width": 1200, "height": 800}</arg>
+<arg>ignoreHTTPSErrors=True</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-24T11:45:13.224018" elapsed="0.031180"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-24T11:45:19.428257" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-24T11:45:13.255198" elapsed="6.173059"/>
+</kw>
+<status status="PASS" start="2025-08-24T11:45:11.882049" elapsed="7.546208"/>
+</kw>
+<test id="s1-t1" name="TC8_Slider" line="71">
+<kw name="Go To" owner="Browser">
+<msg time="2025-08-24T11:45:21.485360" level="INFO">Successfully opened URL https://demoqa.com/slider</msg>
+<arg>https://demoqa.com/slider</arg>
+<arg>wait_until=load</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-08-24T11:45:19.441153" elapsed="2.045329"/>
+</kw>
+<kw name="Get BoundingBox" owner="Browser">
+<msg time="2025-08-24T11:45:21.536433" level="INFO">${box} = {'x': 316.81817626953125, 'y': 522.897705078125, 'width': 404.9715576171875, 'height': 37.99713134765625}</msg>
+<var>${box}</var>
+<arg>input[type="range"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Gets elements size and location as an object ``{x: float, y: float, width: float, height: float}``.</doc>
+<status status="PASS" start="2025-08-24T11:45:21.487484" elapsed="0.048949"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-08-24T11:45:21.538430" level="INFO">${width} = 404.9715576171875</msg>
+<var>${width}</var>
+<arg>${box['width']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-08-24T11:45:21.537436" elapsed="0.000994"/>
+</kw>
+<kw name="Drag And Drop Relative To" owner="Browser">
+<msg time="2025-08-24T11:45:21.561431" level="INFO">Moving mouse to x: 519.303955078125, y: 541.8962707519531 coordinates.</msg>
+<msg time="2025-08-24T11:45:21.585870" level="INFO">Moving mouse to x: 114.3323974609375, y: 541.8962707519531 coordinates.</msg>
+<msg time="2025-08-24T11:45:23.222476" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>input[type="range"]</arg>
+<arg>-${width}</arg>
+<arg>0</arg>
+<arg>steps=100</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Executes a Drag&amp;Drop operation from the element selected by ``selector_from``
+to coordinates relative to the center of that element.</doc>
+<status status="PASS" start="2025-08-24T11:45:21.539432" elapsed="1.688432"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-24T11:45:23.388597" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-08-24T11:45:23.228316" elapsed="0.160281"/>
+</kw>
+<kw name="Drag And Drop Relative To" owner="Browser">
+<msg time="2025-08-24T11:45:23.402333" level="INFO">Moving mouse to x: 519.303955078125, y: 541.8962707519531 coordinates.</msg>
+<msg time="2025-08-24T11:45:23.415285" level="INFO">Moving mouse to x: 924.2755126953125, y: 541.8962707519531 coordinates.</msg>
+<msg time="2025-08-24T11:45:24.776749" level="INFO">No coordinates where set. Action appears at current position.</msg>
+<arg>css=input[type="range"]</arg>
+<arg>${width}</arg>
+<arg>0</arg>
+<arg>steps=100</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Executes a Drag&amp;Drop operation from the element selected by ``selector_from``
+to coordinates relative to the center of that element.</doc>
+<status status="PASS" start="2025-08-24T11:45:23.389593" elapsed="1.390288"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-24T11:45:24.906114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-08-24T11:45:24.780880" elapsed="0.125234"/>
+</kw>
+<msg time="2025-08-24T11:45:24.909112" level="INFO">Set timeout to: 10000</msg>
+<tag>tc8</tag>
+<status status="PASS" start="2025-08-24T11:45:19.428257" elapsed="5.477857"/>
+</test>
+<status status="PASS" start="2025-08-24T11:45:11.646705" elapsed="13.266415"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tc8</stat>
+</tag>
+<suite>
+<stat name="Day3" id="s1" pass="1" fail="0" skip="0">Day3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

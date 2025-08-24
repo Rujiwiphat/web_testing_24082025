@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.10 on win32)" generated="2025-08-24T13:09:28.569687" rpa="false" schemaversion="5">
+<suite id="s1" name="Web Table" source="D:\RobotFrameWrok_Entronica\TEST_CASE\web_table.robot">
+<test id="s1-t1" name="Advanced Web Table Interaction" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-24T13:09:28.886871" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_web_table\\browser\\traces\\temp\\c141d93a-1f2e-470b-9270-8bd9da9edae0"}</msg>
+<msg time="2025-08-24T13:09:28.913599" level="INFO">Starting Browser process C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js using port 63922</msg>
+<msg time="2025-08-24T13:09:28.913599" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\Browser\\wrapper\\index.js', '63922']</msg>
+<msg time="2025-08-24T13:09:30.651471" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_web_table\\browser\\traces\\temp\\c141d93a-1f2e-470b-9270-8bd9da9edae0"}</msg>
+<arg>headless=false</arg>
+<arg>slowMo=1s</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-24T13:09:28.870872" elapsed="1.780599"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-24T13:09:30.657489" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-24T13:09:30.692020" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-24T13:09:30.692020" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-24T13:09:30.653490" elapsed="0.039527"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-24T13:09:38.087810" level="INFO">Successfully initialized new page object and opened url: https://demoqa.com/webtables</msg>
+<arg>https://demoqa.com/webtables</arg>
+<arg>wait_until=load</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-24T13:09:30.694023" elapsed="7.393787"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>//div[@class="rt-table"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-08-24T13:09:38.088797" elapsed="1.067160"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-08-24T13:09:39.162967" level="INFO">${rows} = 3</msg>
+<var>${rows}</var>
+<arg>//div[@class='rt-tr -odd' or @class='rt-tr -even']</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.156966" elapsed="0.006001"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${rows}</arg>
+<arg>${3}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.162967" elapsed="0.000997"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T13:09:39.189950" level="INFO">Text: 'cierra@example.com'</msg>
+<msg time="2025-08-24T13:09:39.189950" level="INFO">${email} = cierra@example.com</msg>
+<var>${email}</var>
+<arg>xpath=(//div[@class='rt-tr -odd' or @class='rt-tr -even'])[${index}+1]/div[@class='rt-td'][4]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.164967" elapsed="0.024983"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-24T13:09:39.190953" level="INFO">Checking Email: cierra@example.com</msg>
+<arg>Checking Email: ${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.190953" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${email}</arg>
+<arg>@example.com</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.190953" elapsed="0.000000"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-08-24T13:09:39.164967" elapsed="0.025986"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T13:09:39.210954" level="INFO">Text: 'alden@example.com'</msg>
+<msg time="2025-08-24T13:09:39.210954" level="INFO">${email} = alden@example.com</msg>
+<var>${email}</var>
+<arg>xpath=(//div[@class='rt-tr -odd' or @class='rt-tr -even'])[${index}+1]/div[@class='rt-td'][4]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.191948" elapsed="0.019006"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-24T13:09:39.210954" level="INFO">Checking Email: alden@example.com</msg>
+<arg>Checking Email: ${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.210954" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${email}</arg>
+<arg>@example.com</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.211948" elapsed="0.000000"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-08-24T13:09:39.190953" elapsed="0.020995"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T13:09:39.227017" level="INFO">Text: 'kierra@example.com'</msg>
+<msg time="2025-08-24T13:09:39.227017" level="INFO">${email} = kierra@example.com</msg>
+<var>${email}</var>
+<arg>xpath=(//div[@class='rt-tr -odd' or @class='rt-tr -even'])[${index}+1]/div[@class='rt-td'][4]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.211948" elapsed="0.015069"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-24T13:09:39.228012" level="INFO">Checking Email: kierra@example.com</msg>
+<arg>Checking Email: ${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.228012" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${email}</arg>
+<arg>@example.com</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.228012" elapsed="0.000000"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2025-08-24T13:09:39.211948" elapsed="0.016064"/>
+</iter>
+<var>${index}</var>
+<value>${rows}</value>
+<status status="PASS" start="2025-08-24T13:09:39.163964" elapsed="0.065048"/>
+</for>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T13:09:39.230009" level="INFO">Clicks the element 'id=addNewRecordButton'.</msg>
+<arg>id=addNewRecordButton</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:39.229012" elapsed="1.067058"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:40.296070" level="INFO">Fills the text 'John' in the given field.</msg>
+<arg>id=firstName</arg>
+<arg>John</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:40.296070" elapsed="1.021872"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:41.318944" level="INFO">Fills the text 'Doe' in the given field.</msg>
+<arg>id=lastName</arg>
+<arg>Doe</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:41.318944" elapsed="1.027495"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:42.347457" level="INFO">Fills the text 'john.doe@example.com' in the given field.</msg>
+<arg>id=userEmail</arg>
+<arg>john.doe@example.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:42.347457" elapsed="1.029966"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:43.378421" level="INFO">Fills the text '32' in the given field.</msg>
+<arg>id=age</arg>
+<arg>32</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:43.377423" elapsed="1.028756"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:44.407180" level="INFO">Fills the text '50000' in the given field.</msg>
+<arg>id=salary</arg>
+<arg>50000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:44.407180" elapsed="1.020791"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-24T13:09:45.428965" level="INFO">Fills the text 'QA' in the given field.</msg>
+<arg>id=department</arg>
+<arg>QA</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:45.428965" elapsed="1.017622"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T13:09:46.447575" level="INFO">Clicks the element 'id=submit'.</msg>
+<arg>id=submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:46.447575" elapsed="1.043725"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-08-24T13:09:47.496298" level="INFO">${rows} = 4</msg>
+<var>${rows}</var>
+<arg>//div[@class='rt-tr -odd' or @class='rt-tr -even']</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.492287" elapsed="0.004011"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${rows}</arg>
+<arg>${4}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.497291" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T13:09:47.515300" level="INFO">Text: '39'</msg>
+<msg time="2025-08-24T13:09:47.516285" level="INFO">${age} = 39</msg>
+<var>${age}</var>
+<arg>xpath=(//div[@class='rt-tr -odd' or @class='rt-tr -even'])[${index}+1]/div[@class='rt-td'][3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.498286" elapsed="0.017999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-24T13:09:47.516285" level="INFO">Show age: 39</msg>
+<arg>Show age: ${age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.516285" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${age} == ${45}">
+<kw name="Click" owner="Browser">
+<arg>//span[@id="delete-record-${index+1}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-24T13:09:47.517301" elapsed="0.000000"/>
+</kw>
+<break>
+<status status="NOT RUN" start="2025-08-24T13:09:47.517301" elapsed="0.000000"/>
+</break>
+<status status="NOT RUN" start="2025-08-24T13:09:47.516285" elapsed="0.001016"/>
+</branch>
+<status status="PASS" start="2025-08-24T13:09:47.516285" elapsed="0.001016"/>
+</if>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-08-24T13:09:47.498286" elapsed="0.019015"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-24T13:09:47.536710" level="INFO">Text: '45'</msg>
+<msg time="2025-08-24T13:09:47.536710" level="INFO">${age} = 45</msg>
+<var>${age}</var>
+<arg>xpath=(//div[@class='rt-tr -odd' or @class='rt-tr -even'])[${index}+1]/div[@class='rt-td'][3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.517301" elapsed="0.019409"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-24T13:09:47.537709" level="INFO">Show age: 45</msg>
+<arg>Show age: ${age}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.537709" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${age} == ${45}">
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T13:09:47.538706" level="INFO">Clicks the element '//span[@id="delete-record-2"]'.</msg>
+<arg>//span[@id="delete-record-${index+1}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:09:47.537709" elapsed="1.034546"/>
+</kw>
+<break>
+<status status="PASS" start="2025-08-24T13:09:48.572255" elapsed="0.000000"/>
+</break>
+<status status="PASS" start="2025-08-24T13:09:47.537709" elapsed="1.034546"/>
+</branch>
+<status status="PASS" start="2025-08-24T13:09:47.537709" elapsed="1.034546"/>
+</if>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-08-24T13:09:47.517301" elapsed="1.054954"/>
+</iter>
+<var>${index}</var>
+<value>${rows}</value>
+<status status="PASS" start="2025-08-24T13:09:47.498286" elapsed="1.073969"/>
+</for>
+<msg time="2025-08-24T13:09:48.577248" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-08-24T13:09:48.591255" level="INFO">Switching context to context=bd073056-f56c-4141-915b-e78ef84cbdfd in CURRENT</msg>
+<msg time="2025-08-24T13:09:48.600242" level="INFO">Successfully changed active context: context=bd073056-f56c-4141-915b-e78ef84cbdfd</msg>
+<msg time="2025-08-24T13:09:48.687254" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-08-24T13:09:28.869853" elapsed="19.703408"/>
+</test>
+<status status="PASS" start="2025-08-24T13:09:28.571685" elapsed="20.117570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Web Table" id="s1" pass="1" fail="0" skip="0">Web Table</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

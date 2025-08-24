@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.10.10 on win32)" generated="2025-08-24T13:25:36.748012" rpa="false" schemaversion="5">
+<suite id="s1" name="Popup Js" source="D:\RobotFrameWrok_Entronica\TEST_CASE\popup_js.robot">
+<test id="s1-t1" name="อ่านข้อความใน Alert" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-24T13:25:36.978171" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_popup_js\\browser\\traces\\temp\\a66bab91-9863-4a38-85ff-20f75969a30a"}</msg>
+<msg time="2025-08-24T13:25:37.003088" level="INFO">Starting Browser process C:\Users\Asus\AppData\Local\Programs\Python\Python310\lib\site-packages\Browser\wrapper\index.js using port 58764</msg>
+<msg time="2025-08-24T13:25:37.003088" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\Browser\\wrapper\\index.js', '58764']</msg>
+<msg time="2025-08-24T13:25:38.279393" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"D:\\RobotFrameWrok_Entronica\\TEST_CASE\\result_popup_js\\browser\\traces\\temp\\a66bab91-9863-4a38-85ff-20f75969a30a"}</msg>
+<arg>chromium</arg>
+<arg>headless=${False}</arg>
+<arg>slowMo=1s</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-24T13:25:36.972207" elapsed="1.307186"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-24T13:25:38.282512" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2025-08-24T13:25:38.315270" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-24T13:25:38.316261" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-24T13:25:38.279393" elapsed="0.036868"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-24T13:25:43.683669" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/javascript_alerts</msg>
+<arg>https://the-internet.herokuapp.com/javascript_alerts</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-24T13:25:38.316261" elapsed="5.367408"/>
+</kw>
+<kw name="Handle Future Dialogs" owner="Browser">
+<arg>action=accept</arg>
+<tag>PageContent</tag>
+<doc>Handle next dialog on page with ``action``.</doc>
+<status status="PASS" start="2025-08-24T13:25:43.683669" elapsed="0.006365"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-24T13:25:43.690034" level="INFO">Clicks the element 'xpath=//button[text()='Click for JS Alert']'.</msg>
+<arg>xpath=//button[text()='Click for JS Alert']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-24T13:25:43.690034" elapsed="1.063597"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-24T13:25:44.852960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>mask=//button[text()='Click for JS Alert']</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-08-24T13:25:44.753631" elapsed="0.099797"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-24T13:25:45.112686" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-24T13:25:44.853428" elapsed="0.259258"/>
+</kw>
+<status status="PASS" start="2025-08-24T13:25:36.972207" elapsed="8.141738"/>
+</test>
+<status status="PASS" start="2025-08-24T13:25:36.759516" elapsed="8.387045"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Popup Js" id="s1" pass="1" fail="0" skip="0">Popup Js</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
